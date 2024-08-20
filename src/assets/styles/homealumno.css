@@ -1,0 +1,63 @@
+.alumno-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    color: #393D3F;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+}
+
+.alumno-section-hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    background-image: url('https://images.unsplash.com/photo-1576678927484-cc907957088c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGd5bXxlbnwwfDF8MHx8fDI%3D');
+    background-size: cover;
+    color: #fff;
+}
+
+.alumno-section-hero-div{
+    background-color: #171718;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 80%;
+}
+
+.alumno-btnRutina{
+    background-color: #393D3F;
+    color: #fdfdff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform .3s ease-in;
+}
+
+.alumno-btnRutina:hover{
+    transform: scale(1.1);
+}
+
+.alumno-consejos {
+    background-color: #393D3F;
+    width: 70%;
+    margin: 20px 0;
+    padding: 0px 20px;
+    border-radius: 10px;
+}
+
+.alumno-consejos h3 {
+    animation: updown 5s infinite;
+}
+
+@keyframes updown {
+    0% { transform: translateY(0px);}
+    50% { transform: translateY(10px);}
+    100% { transform: translateY(0px);}
+}
