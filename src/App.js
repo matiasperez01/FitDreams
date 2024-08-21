@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import Login from './pages/Login.js';
 import Home from './pages/Home.js';
 import HomeAlumno from './pages/HomeAlumno.js';
@@ -35,14 +35,14 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
       <Routes>
         <Route exact path="/" element={<Home navbarOptions={navbarHome}/>}/>
         <Route exact path="/login" element={<Login />}/>
         <Route exact path="/alumno" element={<HomeAlumno navbarOptions={navbarAlumno}/>}/>
         <Route exact path="/alumno/rutina" element={<Rutina navbarOptions={navbarAlumno}/>}/>
       </Routes>
-      </BrowserRouter>
+      </HashRouter>
   
     </div>
   );
